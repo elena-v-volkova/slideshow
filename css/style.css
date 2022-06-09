@@ -1,0 +1,526 @@
+@font-face {
+    font-family: DINPro;
+    src: url(/fonts/DINPro.woff);
+}
+
+@font-face {
+    font-family: DINPro;
+    src: url(/fonts/DINPro-Light.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: DINPro;
+    src: url(/fonts/DINPro-Bold.woff);
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: Gilroy;
+    src: url(/fonts/Gilroy-Light.woff2);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(/fonts/Gilroy-Regular.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(/fonts/Gilroy-Extrabold.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Myriad Pro;
+    src: url(/fonts/MyriadPro-Regular.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Myriad Pro;
+    src: url(/fonts/MyriadPro-Light.woff);
+    font-weight: 400;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: 1024px;
+    height: 768px;
+}
+
+.slides {
+    width: 10000px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.slides.transition {
+    transition: all 0.3s ease-in-out;
+}
+
+.slide {
+    width: 1024px;
+    height: 768px;
+}
+
+
+/* Содержимое слайдов */
+
+
+/* Слайд1 */
+
+.start-slide {
+    padding: 170px 0 0 50px;
+    background: url(/img/mainbg.png) no-repeat;
+    background-size: contain;
+
+}
+
+.start-slide__heading {
+    text-transform: uppercase;
+}
+
+.start-slide__heading.heading_big::before {
+    content: '';
+    position: absolute;
+    background: url(/img/pink_sperm_1.png) no-repeat;
+    background-size: contain;
+    width: 595px;
+    height: 93px;
+    z-index: 11;
+    top: 146px;
+    left: 390px;
+}
+
+.start-slide__heading_small {
+    font-family: 'DINPro', sans-serif;
+    font-size: 34px;
+}
+
+.heading_big,
+.advantages-slide__heading.heading_big {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 100px;
+    line-height: 114px;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.slide-btn {
+    padding-left: 60px;
+    bottom: 27px;
+    left: 27px;
+    position: relative;
+    height: 80px;
+    width: 270px;
+    background-color: #ff6699;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.start-slide__button::before {
+    position: absolute;
+    content: '→';
+    line-height: 50px;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 15px;
+    left: 20px;
+    box-shadow: -3px -2px 4px 3px rgb(0 0 0 / 20%), 2px 2px 6px 1px rgb(255 255 255 / 64%);
+
+}
+
+
+
+
+/* Слайд2 */
+
+
+.scrollbar-slide {
+    padding: 160px 0 0 60px;
+    background: url(/img/bg02.png) no-repeat;
+    background-size: contain;
+}
+
+.scroll-slide__heading {
+    margin-bottom: 15px;
+    font-family: 'DINPro', sans-serif;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+/* Скролл */
+
+.scrollBar {
+    background: #000;
+    position: absolute;
+    left: -45px;
+    width: 5px;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+.bar-slider {
+    position: absolute;
+    background: #ff6699;
+    width: 20px;
+    height: 100px;
+    border-radius: 10px;
+    left: -7px;
+    box-shadow: 2px 2px 6px 1px rgb(255 255 255 / 64%) inset, -3px -2px 4px 3px rgb(0 0 0 / 20%) inset;
+}
+
+.container {
+    margin: 15px 0 0 55px;
+    padding: 20px 20px;
+    height: 445px;
+    width: 770px;
+    position: relative;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.scroll {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 6px 4px -4px rgb(255 255 255 / 64%) inset;
+
+}
+
+.scroll::before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 100%;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%);
+    z-index: 4;
+}
+
+.content {
+    padding-right: 52px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+
+/* Слайд 3 */
+
+.advantages-slide {
+    padding: 210px 0 0 255px;
+    box-sizing: border-box;
+    position: relative;
+    background: url(/img/bg03.png) no-repeat;
+    background-size: contain;
+}
+
+.bottle {
+    background: url(/img/bottle.png) no-repeat;
+    background-size: contain;
+    height: 635px;
+    width: 230px;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    z-index: 3;
+}
+
+.advantages-slide__button::before {
+    position: absolute;
+    content: '+';
+    line-height: 50px;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 15px;
+    left: 20px;
+    box-shadow: -3px -2px 4px 3px rgb(0 0 0 / 20%), 2px 2px 6px 1px rgb(255 255 255 / 64%);
+
+}
+
+.advantages-slide__heading {
+    margin: 0;
+    padding: 0 0 0 66px;
+    font-weight: 400;
+    font-family: 'DINPro', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.advantages-slide__heading_small {
+    padding-left: 72px;
+    letter-spacing: 3px;
+}
+
+.advantages-slide__heading_big {
+    position: relative;
+    margin-bottom: 55px;
+    z-index: 3;
+}
+
+.advantages-slide__button {
+    position: absolute;
+    left: 400px;
+    bottom: 0;
+}
+
+.advantages-message {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 29px 0px rgb(2 114 255 / 10%);
+}
+
+.advantages-messages {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 0 50px;
+    font-family: 'DINPro', sans-serif;
+    font-size: 25px;
+}
+
+.advantages-message__first {
+    position: relative;
+    height: 255px;
+    width: 380px;
+    padding: 40px 40px 50px 120px;
+}
+
+.advantages-message__second {
+    position: relative;
+    height: 130px;
+    width: 255px;
+    padding: 40px 55px 40px 50px;
+}
+
+.advantages-message__first::before {
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: -30px;
+    left: 110px;
+    background: url(/img/icon2.png) no-repeat;
+    background-size: contain;
+}
+
+.advantages-message__second::before {
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: -22px;
+    left: 45px;
+    background: url(/img/icon1.png) no-repeat;
+    background-size: contain;
+}
+
+.advantages-message__text {
+    margin: 0;
+}
+
+/* Модальное окно  */
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(22, 39, 62, 0.694);
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modalBody {
+    position: absolute;
+    right: 10px;
+    top: 160px;
+    right: 50px;
+    height: 565px;
+    width: 825px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.closeButton {
+    position: absolute;
+    right: 37px;
+    top: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.closeButton::before,
+.closeButton::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 35px;
+    height: 3px;
+    background: #000;
+}
+
+.closeButton::before {
+    transform: rotate(45deg);
+}
+
+.closeButton::after {
+    transform: rotate(-45deg);
+}
+
+.modal-heading {
+    padding: 49px 0 0 177px;
+}
+
+
+.modal-slide {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.modal-list {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 87px;
+    top: 200px;
+    width: 67%;
+}
+
+.list-item {
+    list-style-type: none
+}
+
+.list-text:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.list-number {
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-family: "Gilroy";
+    color: rgb(140, 201, 232);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.list-text {
+    font-size: 25px;
+    font-family: "DINPro";
+    color: rgb(46, 46, 46);
+    line-height: 1.2;
+}
+
+.modal-control {
+    display: flex;
+    gap: 0 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+    position: absolute;
+    bottom: 55px;
+    left: 190px;
+}
+
+.modal-prev,
+.modal-next,
+.modal-circle {
+    display: block;
+    height: 15px;
+    width: 15px;
+}
+
+
+.modal-prev::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    transform: rotate(-45deg);
+}
+
+.modal-next::before {
+    position: absolute;
+    right: 0;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    transform: rotate(135deg);
+}
+
+.modal-circle::before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(252, 109, 169);
+}
+
+.modal-circle.filled::before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: rgb(252, 109, 169);
+}

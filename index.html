@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Slideshow</title>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slides" id="slides">
+            <div class="slide start-slide">
+                <span class="start-slide__heading start-slide__heading_small">Привет,</span><br>
+                <span class="start-slide__heading heading_big">Это <span class="bold">не</span>
+                    коммерческое задание</span>
+                <button id="next" class="slide-btn start-slide__button">Что дальше?</button>
+            </div>
+            <div class="slide scrollbar-slide">
+                <span class="scroll-slide__heading">Текст<br>сообщения</span>
+                <div class="container">
+                    <div class="scrollBar">
+                        <div class="bar-slider" draggable="true"></div>
+                    </div>
+                    <div class="scroll">
+                        <div class="content">
+                            <span class="bold content__text">Lorem ipsum dolor sit amet,</span> consectetur adipiscing
+                            elit. In
+                            consectetur ac quam sit amet
+                            rutrum. In
+                            ultrices est sit amet accumsan consequat. Cras cursus tortor lectus, sed vulputate dolor
+                            sagittis eget.
+                            Quisque suscipit dapibus lobortis. Morbi venenatis augue ac ex ultricies, ut semper odio
+                            consequat.
+                            Suspendisse potenti. Nam facilisis, libero vitae tincidunt vestibulum, nunc ligula porta
+                            nisi, id
+                            tincidunt erat lorem sit amet tellus. Donec pharetra dui vel laoreet molestie. Duis auctor
+                            aliquam
+                            justo, vel porta nibh. Quisque euismod ligula id enim molestie consequat. Cras cursus tortor
+                            lectus, sed vulputate dolor
+                            sagittis eget.
+                            Quisque suscipit dapibus lobortis. Morbi venenatis augue ac ex ultricies, ut semper odio
+                            consequat.
+                            Suspendisse potenti. Nam facilisis, libero vitae tincidunt vestibulum, nunc ligula porta
+                            nisi, id
+                            tincidunt erat lorem sit amet tellus. Donec pharetra dui vel laoreet molestie. Duis auctor
+                            aliquam
+                            justo, vel porta nibh. Quisque euismod ligula id enim molestie consequat.Cras cursus tortor
+                            lectus, sed vulputate dolor
+                            sagittis eget.
+                            Quisque suscipit dapibus lobortis. Morbi venenatis augue ac ex ultricies, ut semper odio
+                            consequat.
+                            Suspendisse potenti. Nam facilisis, libero vitae tincidunt vestibulum, nunc ligula porta
+                            nisi, id
+                            tincidunt erat lorem sit amet tellus. Donec pharetra dui vel laoreet molestie. Duis auctor
+                            aliquam
+                            justo, vel porta nibh. Quisque euismod ligula id enim molestie consequat.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide advantages-slide">
+                <span class="bottle"></span>
+                <h3 class="advantages-slide__heading advantages-slide__heading_small">
+                    Ключевое сообщение
+                </h3>
+                <h2 class="advantages-slide__heading advantages-slide__heading_big heading_big">
+                    brend<span class="bold">xy</span>
+                </h2>
+                <div class="advantages-messages">
+                    <div class="advantages-message advantages-message__first">
+                        <p class="advantages-message__text advantages-message__text_first">
+                            Ehicula ipsum a arcu
+                            cursus vitae. Eu non
+                            diam phasellus
+                            vestibulum lorem sed
+                            risus ultricies
+                        </p>
+                    </div>
+
+                    <div class="advantages-message advantages-message__second">
+                        <p class="advantages-message__text advantages-message__text_second">
+                            A arcu
+                            cursus vitae.
+                        </p>
+                    </div>
+                    <button class="slide-btn advantages-slide__button">Подробнее</button>
+                </div>
+                <div class="modal">
+                    <div class="modalBody">
+                        <h3 class="advantages-slide__heading advantages-slide__heading_small modal-heading">
+                            Преимущества
+                        </h3>
+                        <span class="closeButton"></span>
+                        <div class="modal-slide slide-first active">
+                            <ul class="modal-list">
+                                <li class="list-item list-number">01</li>
+                                <li class="list-item list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </li>
+                                <li class="list-item list-number">02</li>
+                                <li class="list-item list-text">Faucibus pulvinar elementum integer enim </li>
+                                <li class="list-item list-number">03</li>
+                                <li class="list-item list-text">Faucibus pulvinar elementum integer enim </li>
+                            </ul>
+                        </div>
+                        <div class="modal-slide slide-second">
+                            <ul class="modal-list">
+                                <li class="list-item list-number">04</li>
+                                <li class="list-item list-text">Mi bibendum neque egestas congue quisque egestas diam
+                                </li>
+                                <li class="list-item list-number">05</li>
+                                <li class="list-item list-text">Venenatis lectus magna fringilla urna </li>
+                                <li class="list-item list-number">06</li>
+                                <li class="list-item list-text">Venenatis lectus magna fringilla urna </li>
+                            </ul>
+                        </div>
+                        <div class="modal-control">
+                            <span class="modal-prev"></span>
+                            <span class="modal-circle filled"></span>
+                            <span class="modal-circle modal-circle-second"></span>
+                            <span class="modal-next"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
